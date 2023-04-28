@@ -1,4 +1,5 @@
 import stats from './Statistics/data.json';
+import StatisticItem from './StatisticsItem';
 
 export default function Statistics({ title, stats }) {
   return (
