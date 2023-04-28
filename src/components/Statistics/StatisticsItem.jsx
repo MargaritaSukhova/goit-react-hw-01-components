@@ -1,4 +1,6 @@
-export default function StatisticItem( {label, percentage} ) {
+import PropTypes from 'prop-types';
+
+export default function StatisticItem({ label, percentage }) {
   return (
  <li class="item">
       <span class="label">{label}</span>
