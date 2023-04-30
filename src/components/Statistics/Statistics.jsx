@@ -1,20 +1,27 @@
-import stats from './Statistics/data.json';
-import StatisticItem from './StatisticsItem';
+import StatisticItem from '../StatisticsItem/StatisticsItem';
+import PropTypes from 'prop-types';
 
 export default function Statistics({ title, stats }) {
   return (
     <section class="statistics">
-      <h2 class="title">{title}</h2>
-
+      {title && <h2 class="title">{title}</h2>}
       <ul class="stat-list">
         {stats.map(stat => {
-          <StatisticItem
+          return (
+              <StatisticItem
             key={stat.id}
             label={stat.label}
-            percentage={stat.percentage}
-          />;
+            percentage={stat.percentage}/>
+          )
         })}
       </ul>
     </section>
   );
+}
+
+Statistics.propTypes = {
+  title: PropTypes.string,
+  stats: PropTypes.arrayOf(PropTypes.shape({
+    id: PropTypes.string,
+  }))
 }
