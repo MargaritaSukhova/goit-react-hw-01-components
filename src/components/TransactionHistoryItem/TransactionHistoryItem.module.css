@@ -1,3 +1,7 @@
+.tableRow:nth-child(odd) {
+  background-color: #c4c1c1;
+}
+
 .tableItem {
   padding: 10px;
   border: 2px solid #827f7f;
