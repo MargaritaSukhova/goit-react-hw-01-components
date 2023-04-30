@@ -1,0 +1,10 @@
+.tableItem {
+  padding: 10px;
+  border: 2px solid #827f7f;
+  text-transform: capitalize;
+}
+
+.tableNumber {
+  composes: tableItem;
+  text-align: right;
+}

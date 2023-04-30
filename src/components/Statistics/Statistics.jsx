@@ -1,11 +1,12 @@
 import StatisticItem from '../StatisticsItem/StatisticsItem';
 import PropTypes from 'prop-types';
+import css from "../Statistics/Statisctics.module.css";
 
 export default function Statistics({ title, stats }) {
   return (
-    <section class="statistics">
-      {title && <h2 class="title">{title}</h2>}
-      <ul class="stat-list">
+    <section className={css.statistics}>
+      {title && <h2 className={css.title}>{title}</h2>}
+      <ul className={css.statList}>
         {stats.map(stat => {
           return (
               <StatisticItem
@@ -22,6 +23,6 @@ export default function Statistics({ title, stats }) {
 Statistics.propTypes = {
   title: PropTypes.string,
   stats: PropTypes.arrayOf(PropTypes.shape({
-    id: PropTypes.string,
-  }))
+    id: PropTypes.string.isRequired,
+  }).isRequired).isRequired
 }

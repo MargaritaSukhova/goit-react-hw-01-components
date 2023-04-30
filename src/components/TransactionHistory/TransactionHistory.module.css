@@ -1,0 +1,22 @@
+.transactionHistory {
+  box-shadow:
+    1.3px 1.3px 2.7px rgba(0, 0, 0, 0.051),
+    3.4px 3.2px 6.9px rgba(0, 0, 0, 0.067),
+    6.9px 6.6px 14.2px rgba(0, 0, 0, 0.082),
+    14.2px 13.5px 29.2px rgba(0, 0, 0, 0.109),
+    39px 37px 80px rgba(0, 0, 0, 0.2);
+    margin-bottom: 50px;
+}
+
+.tableHead {
+  text-transform: uppercase;
+  justify-content: center;
+  background-color: rgb(85, 154, 85);
+  font-weight: 600;
+  color: #fff;
+}
+
+.tableHeadItem {
+  padding: 10px;
+  min-width: 170px;
+}

@@ -1,0 +1,36 @@
+.item {
+  background-color: rgb(197, 197, 197);
+  min-width: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 15px;
+  gap: 20px;
+  border-radius: 10px;
+  box-shadow:
+      1.3px 1.3px 2.7px rgba(0, 0, 0, 0.051),
+      3.4px 3.2px 6.9px rgba(0, 0, 0, 0.067),
+      6.9px 6.6px 14.2px rgba(0, 0, 0, 0.082),
+      14.2px 13.5px 29.2px rgba(0, 0, 0, 0.109),
+      39px 37px 80px rgba(0, 0, 0, 0.2);
+}
+
+.status {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: red;
+}
+
+.online {
+  background-color: green;
+}
+
+.avatar {
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.name {
+  font-size: 24px;
+}
